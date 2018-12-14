@@ -1,0 +1,119 @@
+[
+    {
+        "id": "1b963209.e5e22e",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "8b9aaac2.712208",
+        "type": "ibmiot in",
+        "z": "1b963209.e5e22e",
+        "authentication": "boundService",
+        "apiKey": "",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "belt",
+        "applicationId": "",
+        "deviceType": "conveyor",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": false,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": "2",
+        "x": 120,
+        "y": 180,
+        "wires": [
+            [
+                "9a35b72e.d6b608"
+            ]
+        ]
+    },
+    {
+        "id": "9a35b72e.d6b608",
+        "type": "switch",
+        "z": "1b963209.e5e22e",
+        "name": "",
+        "property": "payload.d.rpm",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "2.0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "9c94a86c.b3c3b8"
+            ]
+        ]
+    },
+    {
+        "id": "9c94a86c.b3c3b8",
+        "type": "function",
+        "z": "1b963209.e5e22e",
+        "name": "",
+        "func": "var msg = {payload: \"your conveyor belt is running with aspeed of \" + msg.payload.d.rpm + \" and crossed the speed limit \"}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 460,
+        "y": 180,
+        "wires": [
+            [
+                "dd88f7.f5136708",
+                "6526c49c.5a9f5c"
+            ]
+        ]
+    },
+    {
+        "id": "dd88f7.f5136708",
+        "type": "twilio out",
+        "z": "1b963209.e5e22e",
+        "service": "_ext_",
+        "twilio": "d6756ed8.a72f2",
+        "from": "",
+        "number": "+919705223290",
+        "name": "alert",
+        "x": 650,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6526c49c.5a9f5c",
+        "type": "debug",
+        "z": "1b963209.e5e22e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 660,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "d6756ed8.a72f2",
+        "type": "twilio-api",
+        "z": "",
+        "sid": "AC73c934c3a2e5bed7ca82fd372e2d90a5",
+        "from": "+1 910 390 1495",
+        "name": ""
+    }
+]

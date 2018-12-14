@@ -1,0 +1,13 @@
+{
+  "iotf-service":  [
+      {
+        "credentials": {
+          "org": "<org id>",
+          "apiKey": "<API KEY>",
+          "apiToken": "<API Token>",
+		  "serviceName": "internetofthings.ibmcloud.com" 
+        },
+        "name": "<Service name>"
+      }
+    ]
+}
