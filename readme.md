@@ -46,4 +46,4 @@ The following people have contributed to the development and delivery of this la
 
 • Krishna Reddy Arikatla - IoT Research Associate
 
-• Murali Yerragula - IoT Research Associate
+• Murali Yerragulla - IoT Research Associate
