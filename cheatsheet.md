@@ -4,18 +4,14 @@ The below markdown file consists of commands and code snippets that will help yo
 
 ## Code Snippets
 
-To run the application in Conveyor_Belt_Simulator/bin
-
 To install NPM modules
-
 ```
 npm install
 ```
-
+To run the application in Conveyor_Belt_Simulator/bin
 ```
 npm start
 ```
-
 Change the following in VCAP_SERVICES.json,
 
 ```
