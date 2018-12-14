@@ -7,6 +7,11 @@ The below markdown file consists of commands and code snippets that will help yo
 To run the application in Conveyor_Belt_Simulator/bin
 
 ```
+npm install
+
+```
+
+```
 npm start
 
 ```
