@@ -1,4 +1,4 @@
-# DS18 Open Lab | Connecting a Conveyor Belt Simulator to IBM Watson IoT Platform
+# DS19 Open Lab | Connecting a Conveyor Belt Simulator to IBM Watson IoT Platform
 
 This repository contains the lab for connecting a Conveyor Belt Simulator to the cloud using IBM Watson IoT Platform. It is one of the labs brought to you by Miracle's Innovation Labs.
 
@@ -20,7 +20,7 @@ The following are the technologies that are used in this lab. Any prior knowledg
 
 ## Important Links
 
-• Access Bluemix -  https://console.ng.bluemix.net
+• Access Bluemix -  https://cloud.ibm.com/login
 
 • Access Node-RED -  http://nodered.org
 

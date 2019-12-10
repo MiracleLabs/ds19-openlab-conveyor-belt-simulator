@@ -1,4 +1,4 @@
-# DS18 Open Lab | Connecting a Conveyor Belt Simulator to IBM Watson IoT Platform
+# DS19 Open Lab | Connecting a Conveyor Belt Simulator to IBM Watson IoT Platform
 
 The below markdown file consists of commands and code snippets that will help you complete and understand the lab - Connecting a Conveyor Belt Simulator to IBM Watson IoT Platform.
 
