@@ -6,7 +6,7 @@ This repository contains the lab for connecting a Conveyor Belt Simulator to the
 
 The following are the technologies that are used in this lab. Any prior knowledge of these technologies will accelerate your pace of learning.
 
-• IBM Bluemix
+• IBM Cloud
 
 • Watson IoT Platform
 
@@ -20,7 +20,7 @@ The following are the technologies that are used in this lab. Any prior knowledg
 
 ## Important Links
 
-• Access Bluemix -  https://cloud.ibm.com/login
+• Access IBM Cloud -  https://cloud.ibm.com/login
 
 • Access Node-RED -  http://nodered.org
 
